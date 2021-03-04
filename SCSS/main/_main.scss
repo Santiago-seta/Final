@@ -1,0 +1,53 @@
+
+main{
+	background-color:$blanco;
+	width:100%;
+	height:800px;
+	border:solid 1px $azul;
+}
+
+.padre{
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:65px 65px;
+	background-color:$blanco;
+
+	grid-template-areas:"derecha izquierda"
+						"derecha izquierda";
+	grid-column-gap:5px;
+	grid-row-gap:5px;
+	justify-content: center;
+	align-content: center;
+	margin-bottom:200px;
+}
+
+.hijo1{
+	grid-area:derecha;
+	background-color:$celeste;
+	height:300px;
+	width:250px;
+	margin-left:0px;
+
+}
+
+.hijo2{
+	grid-area:izquierda;
+	background-color:$celeste;
+	height:300px;
+	width:250px;
+	margin-left:0px;
+}
+
+
+.red{
+	color:$rojo;
+	text-decoration:underline;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+div{
+	color:$naranja;
+	margin-top:10px;
+}

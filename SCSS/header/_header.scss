@@ -1,0 +1,26 @@
+header{
+		img{
+		transform:scale(1);
+		animation:animacion 3s infinite;
+		width:100px;
+		height:50px;
+	}
+	&:hover{
+		animation-play-state:paused;
+	}
+
+	background-image:linear-gradient(to right,cyan,$violeta);
+	width:100%;
+	height:180px;
+	border:solid 1px $azul;
+}
+
+.blue{
+	color:$azul;
+	font-size:50px;
+	text-align: center;
+	font-style:italic;
+	word-spacing:10px;
+}
+
+
